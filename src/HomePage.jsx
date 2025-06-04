@@ -5,13 +5,14 @@ export function HomePage() {
         <div>
             <Navbar/>
             <br/>
+            <br/>
             <Card/>
         </div>
     )
 }
 
 export function Navbar() {
-    return <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",height:70, width:"full"}}>
+    return <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",height:70, width:"full"}}>
         <div style={{display:"flex", justifyContent:"center",fontSize:25,color:"#5b4c36",paddingTop:17}}> 
             Pet Adoption Form
         </div>
@@ -110,13 +111,13 @@ export function Card() {
 
 
     return <div>
-        <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",height:550,width:500,
-     marginLeft:550, marginRight:550,
+        <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",height:650,width:500,
+     marginLeft:550, marginRight:550,borderRadius:4, boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px"
     }}>
-         <div style={{paddingLeft:150,paddingRight:100,paddingTop:30}}>
-        <div style={{color:"#5b4c36", fontSize:18}}>Pet Name </div>
+         <div style={{paddingLeft:20,paddingRight:20,paddingTop:30}}>
+        <div style={{color:"#5d2b2a", fontSize:22,fontFamily:"sans-serif",paddingBottom:10}}>Pet Name </div>
         <div>
-            <input style={{padding:3,fontSize:16,borderRadius:4}} 
+            <input style={{paddingTop:8,paddingBottom:8,paddingLeft:10,paddingRight:200,fontSize:20,borderRadius:4,fontFamily:"sans-serif",}} 
             type="text" 
             placeholder="Pet Name"
             value={inputOne} 
@@ -124,9 +125,9 @@ export function Card() {
                 setInputOne(event.target.value);
                 }}/>
         </div>
-        <div style={{color:"#5b4c36", fontSize:18}}>Pet Type</div>
+        <div style={{color:"#5d2b2a", fontSize:22,fontFamily:"sans-serif",paddingBottom:10,paddingTop:10}}>Pet Type</div>
         <div>
-            <input style={{padding:3,fontSize:16,borderRadius:4}} 
+            <input style={{paddingTop:8,paddingBottom:8,paddingLeft:10,paddingRight:200,fontSize:20,borderRadius:4,fontFamily:"sans-serif",}} 
             type="text" 
             placeholder="Pet Type"
             value={inputtwo} 
@@ -134,18 +135,18 @@ export function Card() {
                 setInputTwo(event.target.value);
                 }}/>
         </div>
-        <div style={{color:"#5b4c36", fontSize:18}}>Bread</div>
+        <div style={{color:"#5d2b2a", fontSize:22,fontFamily:"sans-serif",paddingBottom:10,paddingTop:10}}>Bread</div>
         <div>
-            <input style={{padding:3,fontSize:16,borderRadius:4}}  
+            <input style={{paddingTop:8,paddingBottom:8,paddingLeft:10,paddingRight:200,fontSize:20,borderRadius:4,fontFamily:"sans-serif",}}
             type="text" 
-            placeholder="Bread"value={inputthree} 
+            placeholder="Breed"value={inputthree} 
             onChange={function handleChange(event) {
                 setInputThree(event.target.value);
                 }}/>
         </div>
         <div>
-        <div style={{color:"#5b4c36", fontSize:18}}>Your Name</div>
-            <input style={{padding:3,fontSize:16,borderRadius:4}}  
+        <div style={{color:"#5d2b2a", fontSize:22,fontFamily:"sans-serif",paddingBottom:10,paddingTop:10}}>Your Name</div>
+            <input style={{paddingTop:8,paddingBottom:8,paddingLeft:10,paddingRight:200,fontSize:20,borderRadius:4,fontFamily:"sans-serif",}}
             type="text"
              placeholder="Your Name"
              value={inputfour}
@@ -153,9 +154,9 @@ export function Card() {
                 setInputFour(event.target.value);
                 }}/>
         </div>
-        <div style={{color:"#5b4c36", fontSize:18}}> Email </div>
+        <div style={{color:"#5d2b2a", fontSize:22,fontFamily:"sans-serif",paddingBottom:10,paddingTop:10}}> Email </div>
         <div>
-            <input style={{padding:3,fontSize:16,borderRadius:4}}  
+            <input style={{paddingTop:8,paddingBottom:8,paddingLeft:10,paddingRight:200,fontSize:20,borderRadius:4,fontFamily:"sans-serif",}}
             type="text" 
             placeholder="Email" 
             value={inputfive} 
@@ -163,9 +164,9 @@ export function Card() {
                 setInputFive(event.target.value);
                 }}/>
         </div>
-        <div style={{color:"#5b4c36", fontSize:18}}> Phone </div>
+        <div style={{color:"#5d2b2a", fontSize:22,fontFamily:"sans-serif",paddingBottom:10,paddingTop:10}}> Phone </div>
         <div>
-            <input style={{padding:3,fontSize:16,borderRadius:4}} 
+            <input style={{paddingTop:8,paddingBottom:8,paddingLeft:10,paddingRight:200,fontSize:20,borderRadius:4,fontFamily:"sans-serif",}}
              type="text"
              placeholder="Phone" 
              value={inputsix} 
@@ -173,8 +174,9 @@ export function Card() {
                 setInputSix(event.target.value);
                 }}/>
         </div>
+        <br/>
         <button onClick={onButtonClick} 
-        style={{borderRadius:5,marginTop:10,paddingLeft:70,paddingRight:80,fontSize:18,color:"#5b4c36",backgroundColor:"rgba(200, 152, 139, 0.5)",}}>
+        style={{borderRadius:5,marginTop:10,paddingLeft:195,paddingRight:198,paddingTop:10,paddingBottom:10,fontSize:18,color:"#5d2b2a",backgroundColor:"#f493d4",}}>
             Submit
         </button>
         </div>
@@ -185,111 +187,146 @@ export function Card() {
     <br/>
     <div style={{display:"flex",justifyContent:"center"}}>
         <div>
-        <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+        <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+            fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>Pet Name</div>
-        <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+        <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+            fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}> {items1} </div>
         </div>
         <div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+            fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
              paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>Pet Type</div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+             fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>{items2}</div>
         </div>
         <div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+            fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
              paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>Breed</div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
-            borderRadius:2,
+            fontSize:20,
+            fontFamily:"sans-serif",
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>{items3}</div>
         </div>
         <div>  
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+             fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>Adopter Name</div>        
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+            fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>{items4}</div>
         </div>
         <div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+             fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>Email</div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(207, 187, 190, 0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+             fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2,
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>{items5}</div>
         </div>
         <div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+             fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2, 
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }} >Phone</div>
-            <div style={{backgroundColor:"rgba(200, 152, 139, 0.5)",
+            <div style={{backgroundColor:"rgba(224, 175, 183,0.5)",
             boxShadow:" rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px",
             alignItems:"center",
-            fontSize:18,
+            fontSize:20,
+            fontFamily:"sans-serif",
             borderRadius:2, 
             paddingLeft:50,
-             paddingRight:50
+             paddingRight:50,
+             paddingTop:5,
+             paddingBottom:5
         }}>{items6}</div>
         </div>
     </div>
